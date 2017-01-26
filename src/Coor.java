@@ -33,4 +33,16 @@ public class Coor extends Point
     {
         this.y = y;
     }
+
+    @Override
+    public double getAngle()
+    {
+        return Math.tan(y / x);
+    }
+
+    @Override
+    public double getMag()
+    {
+        return Math.sqrt(x * x + y * y);
+    }
 }
