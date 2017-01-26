@@ -37,4 +37,15 @@ public class Vector
     {
         this.end = end;
     }
+
+    public Vector add(Vector other)
+    {
+        double xi = beg.getX() + other.getBeg().getX();
+        double yi = beg.getY() + other.getBeg().getY();
+
+        double xf = end.getX() + other.getEnd().getX();
+        double yf = end.getY() + other.getEnd().getY();
+
+        return new Vector(new Polar(xi, yi), new Polar(xf, yf));
+    }
 }
