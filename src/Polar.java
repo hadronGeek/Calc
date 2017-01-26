@@ -33,4 +33,23 @@ public class Polar extends Point
     {
         this.angle = angle;
     }
+
+    public Polar()
+    {
+        mag = 0;
+        angle = 0;
+    }
+
+    @Override
+    public double getX()
+    {
+        return (mag * Math.cos(angle));
+
+    }
+
+    @Override
+    public double getY()
+    {
+        return (mag * Math.sin(angle));
+    }
 }
