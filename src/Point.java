@@ -3,4 +3,11 @@
  */
 public abstract class Point
 {
+    public abstract double getX();
+
+    public abstract double getY();
+
+    public abstract double getAngle();
+
+    public abstract double getMag();
 }
